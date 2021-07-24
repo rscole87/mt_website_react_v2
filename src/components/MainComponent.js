@@ -3,6 +3,7 @@ import Header from "./HeaderComponent";
 import About from "./AboutComponent";
 import Featured from "./FeaturedComponent";
 import Capabilities from "./CapabilitiesComponent";
+import Contact from "./ContactComponent";
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <About />
       <Featured />
       <Capabilities />
+      <Contact />
     </>
   );
 };
