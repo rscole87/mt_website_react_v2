@@ -1,14 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;800&display=swap");
+@import "./mixins";
+@import "./variables";
 
-#header-section{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.815)), url(../images/bg-marble.jpg);
-    background-size: cover;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-    img {
-        max-width: 400px;
-    }
+#main-nav {
+  backdrop-filter: blur(5px);
+  background-color: #222222e3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 
-    #header {
-        height: 80vh;
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    margin: 0px 5px;
+  }
+
+  #contact-link {
+    color: black;
+    background-color: $yellowGold;
+    border-radius: 20px;
+    transition: 300ms;
+
+    &:hover {
+      background-color: rgba(92, 92, 92, 0.623);
     }
+  }
+}
+
+body {
+  @include raleway();
+  background-color: $yellowGold;
+}
+
+h3 {
+  @include heading();
+}
+
+#header-section {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.815)), url(../images/bg-marble.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+
+  img {
+    max-width: 400px;
+
+    @media only screen and (max-width: 575px) {
+      max-width: 50%;
+    }
+  }
+
+  #header {
+    height: 80vh;
+  }
+}
+
+#about-section {
+  min-height: 40vh;
+}
+
+#featured-projects-section {
+  -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  min-height: 50vh;
+  background-color: #e9e9e9;
 }
