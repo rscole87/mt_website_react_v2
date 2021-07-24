@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import navLinks from "../shared/navLinks";
+import mtLogo from '../images/mt-logo.png'
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -43,6 +44,16 @@ const Header = () => {
           </Collapse>
         </div>
       </Navbar>
+
+      <section id="header-section">
+        <Container>
+          <Row id="header">
+            <Col className="mx-auto my-auto text-center">
+                <img src={mtLogo} alt="Marble Theory Design" />
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   )
 }

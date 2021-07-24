@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+#header-section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.74)), to(rgba(255, 255, 255, 0.815))), url(../images/bg-marble.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.815)), url(../images/bg-marble.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+#header-section img {
+  max-width: 400px;
+}
+
+#header-section #header {
+  height: 80vh;
+}
+/*# sourceMappingURL=App.css.map */
