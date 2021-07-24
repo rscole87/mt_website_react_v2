@@ -67,6 +67,16 @@ h3 {
   min-height: 40vh;
 }
 
+#about-section #right-col {
+  border-left: 2px solid #ffeaaf;
+}
+
+@media only screen and (max-width: 575px) {
+  #about-section #right-col {
+    border: none;
+  }
+}
+
 #featured-projects-section {
   -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
@@ -79,8 +89,8 @@ h3 {
 }
 
 #capabilities-section .center-item {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-left: 2px solid #ffeaaf;
+  border-right: 2px solid #ffeaaf;
 }
 
 @media only screen and (max-width: 575px) {

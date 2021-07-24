@@ -6,12 +6,12 @@ const About = () => {
     <section id="about-section" className="d-flex align-items-center">
       <Container>
         <Row>
-          <Col sm="6">
+          <Col sm="6" className="pt-4 pt-sm-0 pe-sm-5">
             <p className="body-copy">Marble Theory is a branding and design firm that helps companies put their best foot forward through refined design and stimulating visual creations. These creations build a unique brand experience for our clients which can be felt in all touch points.</p>
             <span className="accent-text">The look, the feel, the experience.</span>
           </Col>
 
-          <Col sm="6">
+          <Col sm="6" className="pt-3 pt-sm-0 ps-sm-5" id="right-col">
             <h3>Collaborative Solutions to Creative Problems</h3>
             <button>About Us</button>
           </Col>
