@@ -21,9 +21,8 @@ const Contact = () => {
 
               <input name="email" type="text" placeholder="Email*" />
               <input name="company" type="text" placeholder="Company Name*" />
-              <input name="role" type="text" placeholder="Your role/title" />
 
-              <textarea name="message" cols="75" rows="3" placeholder="Please tell us a little about you business and how we can best assist you."></textarea>
+              <textarea name="message" cols="75" rows="3" placeholder="Please tell us a little about your business and how we can best assist you."></textarea>
 
               <div id="submit-bttn-div">
                 <input id="submit" type="submit" value="Submit" />

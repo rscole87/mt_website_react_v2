@@ -39,7 +39,7 @@ const Header = () => {
             <Nav className="text-center" navbar>
               {links}
               <NavItem>
-                <a id="contact-link" className="nav-link px-3" href="" onClick={() => toggleNav()}>
+                <a id="contact-link" className="nav-link px-3" href="#contact-section" onClick={() => closeNav()}>
                   Contact
                 </a>
               </NavItem>
