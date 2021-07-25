@@ -31,6 +31,8 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #ffdc7c;
+  overflow-x: hidden;
+  position: relative;
 }
 
 h3 {
@@ -65,10 +67,20 @@ h3 {
 
 #about-section {
   min-height: 40vh;
+  scroll-margin-top: 15vh;
+}
+
+#about-section .accent-text {
+  font-style: italic;
 }
 
 #about-section #right-col {
   border-left: 2px solid #ffeaaf;
+}
+
+#about-section #right-col .pull-quote {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -103,6 +115,7 @@ h3 {
 #capabilities-section {
   min-height: 40vh;
   padding: 10vh 0;
+  scroll-margin-top: 7.8vh;
 }
 
 #capabilities-section .center-item {
@@ -118,7 +131,7 @@ h3 {
 
 #contact-section {
   padding: 10vh 0;
-  background-color: #3f3f3f;
+  background-color: #333333;
 }
 
 #contact-section ::-webkit-input-placeholder {
@@ -225,5 +238,22 @@ h3 {
   #contact-section #form-div #contact-form {
     width: 100%;
   }
+}
+
+footer {
+  min-height: 10vh;
+  padding: 10vh 0;
+  background-color: #272727;
+}
+
+footer p,
+footer li a,
+footer address {
+  color: white;
+  text-decoration: none;
+}
+
+footer .mt-logo {
+  max-height: 75px;
 }
 /*# sourceMappingURL=App.css.map */

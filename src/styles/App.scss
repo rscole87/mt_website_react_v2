@@ -32,6 +32,8 @@
 body {
   @include raleway();
   background-color: $yellowGold;
+  overflow-x: hidden;
+  position: relative;
 }
 
 h3 {
@@ -59,10 +61,19 @@ h3 {
 
 #about-section {
   min-height: 40vh;
+  scroll-margin-top: 15vh;
+
+  .accent-text {
+    font-style: italic;
+  }
 
   #right-col {
     border-left: 2px solid $lightYellowGold;
 
+    .pull-quote {
+      font-size: 3rem;
+      letter-spacing: 0.3rem;
+    }
     @media only screen and (max-width: 575px) {
       border: none;
     }
@@ -94,6 +105,7 @@ h3 {
 #capabilities-section {
   min-height: 40vh;
   padding: 10vh 0;
+  scroll-margin-top: 7.8vh;
 
   .center-item {
     border-left: 2px solid $lightYellowGold;
@@ -107,7 +119,7 @@ h3 {
 
 #contact-section {
   padding: 10vh 0;
-  background-color: rgb(63, 63, 63);
+  background-color: #333333;
 
   ::placeholder {
     @include raleway();
@@ -176,5 +188,22 @@ h3 {
         width: 100%;
       }
     }
+  }
+}
+
+footer {
+  min-height: 10vh;
+  padding: 10vh 0;
+  background-color: #272727;
+
+  p,
+  li a,
+  address {
+    color: white;
+    text-decoration: none;
+  }
+
+  .mt-logo {
+    max-height: 75px;
   }
 }
