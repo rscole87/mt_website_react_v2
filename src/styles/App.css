@@ -78,10 +78,26 @@ h3 {
 }
 
 #featured-projects-section {
-  -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   min-height: 50vh;
   background-color: #e9e9e9;
+  padding: 20vh 0 0 0;
+}
+
+@media only screen and (max-width: 575px) {
+  #featured-projects-section {
+    -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+#featured-projects-section .project-thumb {
+  max-width: 600px;
+}
+
+#featured-projects-section .project-thumb img {
+  max-width: 100%;
 }
 
 #capabilities-section {
