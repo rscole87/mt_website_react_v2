@@ -80,7 +80,7 @@ h3 {
 
   min-height: 50vh;
   background-color: #e9e9e9;
-  padding: 20vh 0 0 0;
+  padding: 25vh 0 10vh 0;
 
   .project-thumb {
     max-width: 600px;
@@ -93,6 +93,7 @@ h3 {
 
 #capabilities-section {
   min-height: 40vh;
+  padding: 10vh 0;
 
   .center-item {
     border-left: 2px solid $lightYellowGold;
@@ -100,6 +101,80 @@ h3 {
 
     @media only screen and (max-width: 575px) {
       border: none;
+    }
+  }
+}
+
+#contact-section {
+  padding: 10vh 0;
+  background-color: rgb(63, 63, 63);
+
+  ::placeholder {
+    @include raleway();
+    color: white;
+  }
+
+  #form-div {
+    display: flex;
+    justify-content: center;
+
+    #contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 65%;
+
+      input[type="text"] {
+        @include formInput();
+        color: white;
+        min-width: 40%;
+        flex: 1;
+
+        @media only screen and (max-width: 575px) {
+          min-width: 80%;
+        }
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+      }
+
+      textarea {
+        @include formInput();
+        color: white;
+        width: 100%;
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+
+      #submit-bttn-div {
+        margin: 0 auto;
+      }
+
+      #submit {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.15rem;
+        font-weight: 800;
+        color: white;
+        transition-duration: 0.5s;
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid $lightYellowGold;
+        background-color: transparent;
+      }
+
+      #submit:hover {
+        color: black;
+        background: $yellowGold;
+      }
+
+      @media only screen and (max-width: 575px) {
+        width: 100%;
+      }
     }
   }
 }

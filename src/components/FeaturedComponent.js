@@ -5,7 +5,7 @@ import PROJECTS from "../shared/projects";
 const Featured = () => {
   const projectThumbs = PROJECTS.map((project) => {
     return (
-      <div className="project-thumb">
+      <div className="project-thumb pt-5">
         <img src={project.image} alt={project.title} />
       </div>
     );
@@ -14,7 +14,7 @@ const Featured = () => {
   return (
     <section id="featured-projects-section" className="d-flex align-items-center">
       <Container fluid>
-        <Row className="pb-5">
+        <Row>
           <Col className="text-center">
             <h3>Featured Projects</h3>
           </Col>

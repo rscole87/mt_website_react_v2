@@ -6,7 +6,7 @@ const Capabilities = () => {
     <section id="capabilities-section" className="d-flex align-items-center">
       <Container>
         <Row>
-          <Col className="text-center py-5 pt-sm-1">
+          <Col className="text-center pb-5 pt-sm-1">
             <h3>Creative Capabilities</h3>
           </Col>
         </Row>
