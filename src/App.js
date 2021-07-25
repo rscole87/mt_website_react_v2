@@ -1,4 +1,5 @@
 import Main from "./components/MainComponent";
+import "font-awesome/css/font-awesome.css";
 
 function App() {
   return (

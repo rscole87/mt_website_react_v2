@@ -39,7 +39,7 @@ export default function Footer() {
             </Col>
 
             <Col sm="4" className="text-center">
-              <p>Website designed and developed by:</p>
+              <p><i className="fa fa-copyright fa-lg" /> 2021 Marble Theory Design, LLC</p>
             </Col>
           </Row>
         </Container>
