@@ -13,7 +13,7 @@ const Contact = () => {
 
         <Row>
           <Col id="form-div" className="pt-5">
-            <form id="contact-form" method="post">
+            <form id="contact-form" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="static-contact-form" />
 
               <input name="f_name" type="text" placeholder="First Name*" />

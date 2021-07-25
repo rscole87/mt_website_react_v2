@@ -31,7 +31,7 @@ const Header = () => {
     <>
       <Navbar id="main-nav" dark expand="md">
         <div className="container">
-          <NavbarBrand className="mr-auto" href="/">
+          <NavbarBrand className="mr-auto" href="#header-section">
             <img className="nav-logo" src={mtLogoWhite} height="50" alt="Marble Theory Design" />
           </NavbarBrand>
           <NavbarToggler onClick={toggleNav} />

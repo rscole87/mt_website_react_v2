@@ -87,6 +87,9 @@ h3 {
   #about-section #right-col {
     border: none;
   }
+  #about-section #right-col .pull-quote {
+    font-size: 2rem;
+  }
 }
 
 #featured-projects-section {
