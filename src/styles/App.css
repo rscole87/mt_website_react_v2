@@ -86,12 +86,17 @@ h3 {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 768px) {
+  #about-section #right-col .pull-quote {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   #about-section #right-col {
     border: none;
   }
   #about-section #right-col .pull-quote {
-    font-size: 2rem;
     font-weight: 400;
   }
 }
@@ -104,7 +109,7 @@ h3 {
   padding: 25vh 0 10vh 0;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
   #featured-projects-section {
     -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
@@ -138,7 +143,7 @@ h3 {
 
 #contact-section {
   padding: 10vh 0;
-  background-color: #333333;
+  background-color: #272727;
 }
 
 #contact-section ::-webkit-input-placeholder {
@@ -241,6 +246,12 @@ h3 {
   background: #ffdc7c;
 }
 
+@media only screen and (max-width: 768px) {
+  #contact-section #form-div #contact-form {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   #contact-section #form-div #contact-form {
     width: 100%;
@@ -262,5 +273,10 @@ footer address {
 
 footer .mt-logo {
   max-height: 75px;
+}
+
+footer .footer-link {
+  text-transform: capitalize;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=App.css.map */
