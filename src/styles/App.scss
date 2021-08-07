@@ -73,7 +73,7 @@ h3 {
     border-left: 2px solid $lightYellowGold;
 
     .pull-quote {
-      font-size: 3rem;
+      // font-size: 3rem;
       letter-spacing: 0.3rem;
       font-weight: 300;
     }
@@ -89,6 +89,7 @@ h3 {
 
       .pull-quote {
         font-weight: 400;
+        font-size: 1.5rem;
       }
     }
   }
@@ -98,7 +99,7 @@ h3 {
   -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
   }

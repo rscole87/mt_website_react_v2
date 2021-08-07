@@ -81,7 +81,6 @@ h3 {
 }
 
 #about-section #right-col .pull-quote {
-  font-size: 3rem;
   letter-spacing: 0.3rem;
   font-weight: 300;
 }
@@ -98,6 +97,7 @@ h3 {
   }
   #about-section #right-col .pull-quote {
     font-weight: 400;
+    font-size: 1.5rem;
   }
 }
 
@@ -109,7 +109,7 @@ h3 {
   padding: 25vh 0 10vh 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   #featured-projects-section {
     -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
