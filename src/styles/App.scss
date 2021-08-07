@@ -110,6 +110,14 @@ h3 {
 
   .project-thumb {
     max-width: 600px;
+
+    @media only screen and (max-width: 1024px){
+      max-width: 400px;
+    }
+
+    @media only screen and (max-width: 768px){
+      max-width: 350px;
+    }
  
     img {
       max-width: 100%;
