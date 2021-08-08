@@ -47,6 +47,7 @@ h3 {
   background-size: cover;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  // min-height: 40vh;
 
   img {
     max-width: 400px;
@@ -57,7 +58,7 @@ h3 {
   }
 
   #header {
-    height: 80vh;
+    height: 85vh;
   }
 }
 
