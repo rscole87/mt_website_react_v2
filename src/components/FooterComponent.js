@@ -32,7 +32,7 @@ export default function Footer() {
 
             <Col sm="4" className="text-center text-sm-start mb-4 mb-sm-0 ps-sm-5 ">
               <address>
-                marbletheorystudio@gmail.com
+                marbletheorydesign@gmail.com
               </address>
             </Col>
 
