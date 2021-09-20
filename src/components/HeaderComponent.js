@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   const closeNav = () => {
-    if (isNavOpen == true) {
+    if (isNavOpen === true) {
       toggleNav();
     }
   };
