@@ -109,14 +109,15 @@ h3 {
   padding: 25vh 0 10vh 0;
 
   .project-thumb {
-    max-width: 600px;
+    flex: 1;
+    min-width: 25vw;
 
     @media only screen and (max-width: 1200px){
-      max-width: 400px;
+      min-width: 33vw;
     }
 
     @media only screen and (max-width: 768px){
-      max-width: 350px;
+      min-width: 350px;
     }
  
     img {

@@ -117,18 +117,21 @@ h3 {
 }
 
 #featured-projects-section .project-thumb {
-  max-width: 600px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 25vw;
 }
 
 @media only screen and (max-width: 1200px) {
   #featured-projects-section .project-thumb {
-    max-width: 400px;
+    min-width: 33vw;
   }
 }
 
 @media only screen and (max-width: 768px) {
   #featured-projects-section .project-thumb {
-    max-width: 350px;
+    min-width: 350px;
   }
 }
 
