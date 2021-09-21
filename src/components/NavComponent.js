@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import navLinks from "../shared/navLinks";
-import mtLogo from "../images/mt-logo.png";
 import mtLogoWhite from "../images/mt-logo-white.png";
+import { Link } from "react-router-dom";
 
 const NavComponent = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -20,7 +20,7 @@ const NavComponent = () => {
   const links = navLinks.map((link) => {
     return (
       <NavItem key={link.id} onClick={() => closeNav()}>
-        <a className="nav-link" href={link.url}>
+        <a className="nav-link" href={`/${link.url}`}>
           {link.text}
         </a>
       </NavItem>
@@ -31,7 +31,7 @@ const NavComponent = () => {
     <>
       <Navbar id="main-nav" dark expand="md">
         <div className="container">
-          <NavbarBrand className="mr-auto" href="#header-section">
+          <NavbarBrand className="mr-auto" href={`/#header-section`}>
             <img className="nav-logo" src={mtLogoWhite} height="50" alt="Marble Theory Design" />
           </NavbarBrand>
           <NavbarToggler onClick={toggleNav} />
