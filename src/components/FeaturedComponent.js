@@ -7,7 +7,7 @@ const Featured = (props) => {
   const projectThumbs = props.projects.filter(project => project.featured).map((project) => {
     return (
       <div
-        className="project-thumb p-0 xpt-5"
+        className="project-thumb p-0"
         key={project.id}
         onClick={() => {
           props.setActiveProject(project);

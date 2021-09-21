@@ -7,7 +7,6 @@ import PortfolioPage from "./PortfolioPageComponent";
 import ProjectPage from "./ProjectPageComponent";
 import PROJECTS from "../shared/projectList";
 import { Switch, Route, Redirect } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import ScrollToTop from "./ScrollToTop";
 
 const Main = () => {

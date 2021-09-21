@@ -179,6 +179,20 @@ h3 {
   }
 }
 
+#portfolio-project {
+  .project-page-header{
+    height: 35vh;
+  }
+  .portfolio-thumb {
+    min-height: 20vh;
+    max-height: 30vh;
+
+    img{
+      max-height: 100%
+    }
+  }
+}
+
 #contact-section {
   padding: 15vh 0 10vh 0;
   background-color: #272727;
