@@ -96,12 +96,12 @@ h3 {
 }
 
 #featured-work-section {
-  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
 
   @media only screen and (max-width: 1200px) {
-    -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   }
 
   min-height: 50vh;
@@ -132,24 +132,23 @@ h3 {
         font-size: 1.5rem;
         transition: 0.9s ease;
       }
-
     }
 
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1200px) {
       min-width: 33vw;
     }
 
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
       min-width: 350px;
     }
- 
+
     img {
       max-width: 100%;
       transition: 0.5s ease;
     }
 
-    &:hover{
-      .thumb-overlay{
+    &:hover {
+      .thumb-overlay {
         opacity: 0.6;
 
         .project-title {
@@ -157,7 +156,7 @@ h3 {
         }
       }
 
-      img{
+      img {
         filter: blur(5px);
         overflow: hidden;
       }
@@ -181,8 +180,15 @@ h3 {
 }
 
 #contact-section {
-  padding: 10vh 0;
+  padding: 15vh 0 10vh 0;
   background-color: #272727;
+  -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+
+  @media only screen and (max-width: 1200px) {
+    -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  }
 
   ::placeholder {
     @include raleway();
@@ -273,7 +279,7 @@ footer {
     max-height: 75px;
   }
 
-  .footer-link{
+  .footer-link {
     text-transform: capitalize;
     font-size: 0.8rem;
   }

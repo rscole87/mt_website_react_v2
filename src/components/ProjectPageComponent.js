@@ -17,7 +17,7 @@ const ProjectPage = (props) => {
           </Col>
 
           <Col sm="8" lg="6">
-            <img src={props.project.image} alt={props.project.title} />
+            <img className="project-thumb" src={props.project.image} alt={props.project.title} />
           </Col>
         </Row>
         <Row>
