@@ -101,7 +101,7 @@ h3 {
   }
 }
 
-#featured-projects-section {
+#featured-work-section {
   -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   min-height: 50vh;
@@ -110,13 +110,13 @@ h3 {
 }
 
 @media only screen and (max-width: 1200px) {
-  #featured-projects-section {
+  #featured-work-section {
     -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
-#featured-projects-section .project-thumb {
+#featured-work-section .project-thumb {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -125,7 +125,7 @@ h3 {
   cursor: pointer;
 }
 
-#featured-projects-section .project-thumb .thumb-overlay {
+#featured-work-section .project-thumb .thumb-overlay {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +146,7 @@ h3 {
   transition: 0.5s ease;
 }
 
-#featured-projects-section .project-thumb .thumb-overlay .project-title {
+#featured-work-section .project-thumb .thumb-overlay .project-title {
   margin: 30% 0 0 0;
   text-align: center;
   font-size: 1.5rem;
@@ -155,32 +155,32 @@ h3 {
 }
 
 @media only screen and (max-width: 1200px) {
-  #featured-projects-section .project-thumb {
+  #featured-work-section .project-thumb {
     min-width: 33vw;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #featured-projects-section .project-thumb {
+  #featured-work-section .project-thumb {
     min-width: 350px;
   }
 }
 
-#featured-projects-section .project-thumb img {
+#featured-work-section .project-thumb img {
   max-width: 100%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-#featured-projects-section .project-thumb:hover .thumb-overlay {
+#featured-work-section .project-thumb:hover .thumb-overlay {
   opacity: 0.6;
 }
 
-#featured-projects-section .project-thumb:hover .thumb-overlay .project-title {
+#featured-work-section .project-thumb:hover .thumb-overlay .project-title {
   font-size: 1.2rem;
 }
 
-#featured-projects-section .project-thumb:hover img {
+#featured-work-section .project-thumb:hover img {
   -webkit-filter: blur(5px);
           filter: blur(5px);
   overflow: hidden;

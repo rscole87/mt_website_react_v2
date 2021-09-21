@@ -13,7 +13,7 @@ const Featured = (props) => {
           props.setActiveProject(project);
         }}
       >
-        <Link to={`/project${project.id + 1}`}>
+        <Link to={`portfolio/project${project.id + 1}`}>
           <div className="thumb-overlay d-flex">
             <h3 className="project-title">{project.title}</h3>
           </div>
@@ -23,16 +23,12 @@ const Featured = (props) => {
     );
   });
 
-  if (props.activeProject){
-    return <ProjectPage project={props.activeProject} setActiveProject={props.setActiveProject} />
-  } 
-  
   return (
-    <section id="featured-projects-section" className="d-flex align-items-center">
+    <section id="featured-work-section" className="d-flex align-items-center">
       <Container fluid>
         <Row>
           <Col className="text-center pb-5">
-            <h3>Featured Projects</h3>
+            <h3>Featured Work</h3>
           </Col>
         </Row>
         <Row className="justify-content-around">{projectThumbs}</Row>

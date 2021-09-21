@@ -6,8 +6,8 @@ const navLinks = [
   },
   {
     id: 1,
-    text: "portfolio",
-    url: "#featured-projects-section",
+    text: "featured work",
+    url: "#featured-work-section",
   },
   {
     id: 2,

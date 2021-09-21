@@ -8,7 +8,6 @@ const Header = () => {
 
   return (
     <>
-      <NavComponent />
       <section id="header-section">
         <Container>
           <Row id="header">
