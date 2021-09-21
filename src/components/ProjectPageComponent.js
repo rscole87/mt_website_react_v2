@@ -6,9 +6,11 @@ const ProjectPage = (props) => {
   return (
     <>
       <Container>
+        <Row id="project-page-header" className="py-5">
+            <h3 className="py-5">{props.project.title}</h3>
+        </Row>
         <Row>
           <Col sm="4" lg="6">
-            <h3>{props.project.title}</h3>
             <button onClick={() => props.setActiveProject(null)}>
               <Link to={`/`}>Close</Link>
             </button>

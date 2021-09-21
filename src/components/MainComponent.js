@@ -8,18 +8,19 @@ import ProjectPage from "./ProjectPageComponent";
 import PROJECTS from "../shared/projectList";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { Nav } from "reactstrap";
+import ScrollToTop from "./ScrollToTop";
 
 const Main = () => {
   const [activeProject, setActiveProject] = useState(null);
   console.log(activeProject);
   return (
     <>
+      <ScrollToTop />
       <NavComponent />
       <Switch>
         <Route exact path="/" render={() => <LandingPage projects={PROJECTS} activeProject={activeProject} setActiveProject={setActiveProject} />} />
         <Route exact path="/portfolio" render={() => <PortfolioPage projects={PROJECTS} activeProject={activeProject} setActiveProject={setActiveProject} />} />
-        <Route exact path="/portfolio/:projectid" render={() => <ProjectPage project={activeProject} setActiveProject={setActiveProject} />} />
+        <Route exact path="/portfolio/:projectid/" render={() => <ProjectPage project={activeProject} setActiveProject={setActiveProject} />} />
         <Redirect to="/" />
       </Switch>
       <Contact />
