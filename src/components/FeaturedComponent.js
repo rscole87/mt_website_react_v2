@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import PROJECTS from "../shared/projects";
 import { Link } from "react-router-dom";
 import ProjectPage from "./ProjectPageComponent";
 
 const Featured = (props) => {
-  const projectThumbs = PROJECTS.map((project) => {
+  const projectThumbs = props.projects.filter(project => project.featured).map((project) => {
     return (
       <div
         className="project-thumb p-0 xpt-5"
