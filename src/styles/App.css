@@ -207,12 +207,11 @@ h3 {
   height: 35vh;
 }
 
-#portfolio-project .portfolio-thumb {
+#portfolio-project .portfolio-thumbs {
   min-height: 20vh;
-  max-height: 30vh;
 }
 
-#portfolio-project .portfolio-thumb img {
+#portfolio-project .portfolio-thumbs img {
   max-height: 100%;
 }
 

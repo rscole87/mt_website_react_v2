@@ -17,7 +17,7 @@ const Featured = (props) => {
           <div className="thumb-overlay d-flex">
             <h3 className="project-title">{project.title}</h3>
           </div>
-          <img src={project.image} alt={project.title} />
+          <img src={project.featureImage} alt={project.title} />
         </Link>
       </div>
     );
